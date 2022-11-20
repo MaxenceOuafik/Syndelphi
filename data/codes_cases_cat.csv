@@ -1,0 +1,170 @@
+﻿codename,categoryname,catid,supercatid,casename
+Anxiety,Internalizing symptoms,12,11,4
+Anxiety,Internalizing symptoms,12,11,5
+Anxiety,Internalizing symptoms,12,11,16
+Low self-esteem,Self-esteem,4,12,21
+Low self-esteem,Self-esteem,4,12,21
+Low self-esteem,Self-esteem,4,12,22
+Low self-esteem,Self-esteem,4,12,4
+Low self-esteem,Self-esteem,4,12,8
+Low self-esteem,Self-esteem,4,12,20
+Low self-esteem,Self-esteem,4,12,10
+Low self-esteem,Self-esteem,4,12,20
+Low self-esteem,Self-esteem,4,12,20
+Low self-esteem,Self-esteem,4,12,20
+Low self-esteem,Self-esteem,4,12,11
+Low self-esteem,Self-esteem,4,12,7
+Low self-esteem,Self-esteem,4,12,19
+Low self-esteem,Self-esteem,4,12,15
+Low self-esteem,Self-esteem,4,12,20
+Difficulties bonding with other MSM,Navigating harmful social dynamics inside the community,10,,4
+Difficulties bonding with other MSM,Navigating harmful social dynamics inside the community,10,,4
+Interpersonnal struggles among romantic/sexual partners,Navigating harmful social dynamics inside the community,10,,4
+Interpersonnal struggles among romantic/sexual partners,Navigating harmful social dynamics inside the community,10,,9
+Loneliness,Lack of social support,17,9,21
+Loneliness,Lack of social support,17,9,4
+Loneliness,Lack of social support,17,9,5
+Loneliness,Lack of social support,17,9,7
+Loneliness,Lack of social support,17,9,14
+Loneliness,Lack of social support,17,9,10
+Loneliness,Lack of social support,17,9,15
+Loneliness,Lack of social support,17,9,20
+Loneliness,Lack of social support,17,9,20
+Loneliness,Lack of social support,17,9,10
+Loneliness,Lack of social support,17,9,22
+Loneliness,Lack of social support,17,9,4
+Loneliness,Lack of social support,17,9,5
+Loneliness,Lack of social support,17,9,14
+Loneliness,Lack of social support,17,9,15
+Loneliness,Lack of social support,17,9,16
+Loneliness,Lack of social support,17,9,20
+Loneliness,Lack of social support,17,9,7
+Loneliness,Lack of social support,17,9,15
+Loneliness,Lack of social support,17,9,20
+Loneliness,Lack of social support,17,9,20
+Substance abuse,Externalizing symptoms,13,11,4
+Substance abuse,Externalizing symptoms,13,11,20
+Substance abuse,Externalizing symptoms,13,11,7
+Lack of assertiveness,Self-esteem,4,12,5
+Lack of assertiveness,Self-esteem,4,12,20
+Lack of assertiveness,Self-esteem,4,12,20
+Lack of assertiveness,Self-esteem,4,12,13
+Lack of assertiveness,Self-esteem,4,12,21
+Lack of assertiveness,Self-esteem,4,12,20
+Intracommunity stigma,Navigating harmful social dynamics inside the community,10,,7
+Poor healthcare access,Barriers to wellbeing,18,9,12
+Poor healthcare access,Barriers to wellbeing,18,9,7
+Poor healthcare access,Barriers to wellbeing,18,9,16
+Poor healthcare access,Barriers to wellbeing,18,9,12
+Poor healthcare access,Barriers to wellbeing,18,9,15
+Poor healthcare access,Barriers to wellbeing,18,9,20
+Heteronormativity,Normative pressure,7,9,7
+Heteronormativity,Normative pressure,7,9,12
+Emotional instability,Internalizing symptoms,12,11,8
+Unhealthy power dynamics,Navigating harmful social dynamics inside the community,10,,21
+Unhealthy power dynamics,Navigating harmful social dynamics inside the community,10,,8
+Unhealthy power dynamics,Navigating harmful social dynamics inside the community,10,,8
+Unhealthy power dynamics,Navigating harmful social dynamics inside the community,10,,21
+Unhealthy power dynamics,Navigating harmful social dynamics inside the community,10,,8
+Hypersexualization,Navigating harmful social dynamics inside the community,10,,8
+Hypersexualization,Navigating harmful social dynamics inside the community,10,,6
+Hypersexualization,Navigating harmful social dynamics inside the community,10,,19
+Hypersexualization,Navigating harmful social dynamics inside the community,10,,20
+Cognitive impairments,Internalizing symptoms,12,11,9
+Depression,Internalizing symptoms,12,11,13
+Depression,Internalizing symptoms,12,11,13
+Depression,Internalizing symptoms,12,11,14
+Depression,Internalizing symptoms,12,11,20
+Depression,Internalizing symptoms,12,11,16
+Depression,Internalizing symptoms,12,11,20
+Depression,Internalizing symptoms,12,11,20
+Depression,Internalizing symptoms,12,11,5
+Burnout,Internalizing symptoms,12,11,14
+Migration,Being exposed to socio-economic disadvantages,14,,15
+Migration,Being exposed to socio-economic disadvantages,14,,15
+Migration,Being exposed to socio-economic disadvantages,14,,15
+Homophobia,Discrimination,6,9,15
+Homophobia,Discrimination,6,9,19
+Homophobia,Discrimination,6,9,9
+Homophobia,Discrimination,6,9,6
+Transphobia,Discrimination,6,9,6
+Transphobia,Discrimination,6,9,10
+Transphobia,Discrimination,6,9,21
+Transphobia,Discrimination,6,9,15
+Transphobia,Discrimination,6,9,22
+Transphobia,Discrimination,6,9,6
+Transphobia,Discrimination,6,9,13
+Poor family relationships,Lack of social support,17,9,13
+Poor family relationships,Lack of social support,17,9,19
+Poor family relationships,Lack of social support,17,9,4
+Poor family relationships,Lack of social support,17,9,22
+Poor family relationships,Lack of social support,17,9,4
+Poor family relationships,Lack of social support,17,9,16
+PTSD,Internalizing symptoms,12,11,20
+PTSD,Internalizing symptoms,12,11,20
+Hostility,Externalizing symptoms,13,11,20
+Anticipation of negative events,Minority stress,16,11,21
+Anticipation of negative events,Minority stress,16,11,20
+Anticipation of negative events,Minority stress,16,11,21
+Anticipation of negative events,Minority stress,16,11,22
+Cisnormativity,Normative pressure,7,9,10
+Cisnormativity,Normative pressure,7,9,21
+Cisnormativity,Normative pressure,7,9,21
+Cisnormativity,Normative pressure,7,9,22
+Cisnormativity,Normative pressure,7,9,6
+Cisnormativity,Normative pressure,7,9,10
+Cisnormativity,Normative pressure,7,9,11
+Cisnormativity,Normative pressure,7,9,12
+Cisnormativity,Normative pressure,7,9,13
+Dysphoria,Internalizing symptoms,12,11,11
+Dysphoria,Internalizing symptoms,12,11,13
+Dysphoria,Internalizing symptoms,12,11,13
+Misconceptions surrounding transidentity,Lack of knowledge,8,9,12
+Misconceptions surrounding transidentity,Lack of knowledge,8,9,21
+Misconceptions surrounding transidentity,Lack of knowledge,8,9,12
+Misconceptions surrounding transidentity,Lack of knowledge,8,9,6
+Misconceptions surrounding transidentity,Lack of knowledge,8,9,12
+Unsupportive environment,Lack of social support,17,9,13
+Unsupportive environment,Lack of social support,17,9,9
+Unsupportive environment,Lack of social support,17,9,20
+Unsupportive environment,Lack of social support,17,9,22
+Unsupportive environment,Lack of social support,17,9,9
+Lack of representation/role model,Struggling in a normative society,9,,4
+School dropout,Being exposed to socio-economic disadvantages,14,,9
+Violence,Struggling in a normative society,9,,19
+Violence,Struggling in a normative society,9,,21
+Violence,Struggling in a normative society,9,,15
+Violence,Struggling in a normative society,9,,15
+Dissimulation of one's identity,Minority stress,16,11,20
+Dissimulation of one's identity,Minority stress,16,11,4
+Dissimulation of one's identity,Minority stress,16,11,20
+Substance use,Externalizing symptoms,13,11,20
+Substance use,Externalizing symptoms,13,11,20
+Suicide attempts,Facing mental health challenges,11,,20
+Patriarchal pressures on masculinity,Normative pressure,7,9,21
+Patriarchal pressures on masculinity,Normative pressure,7,9,19
+Patriarchal pressures on masculinity,Normative pressure,7,9,21
+IST,Facing sexual health challenges,15,,13
+IST,Facing sexual health challenges,15,,4
+IST,Facing sexual health challenges,15,,5
+IST,Facing sexual health challenges,15,,8
+IST,Facing sexual health challenges,15,,11
+VIH,Facing sexual health challenges,15,,4
+VIH,Facing sexual health challenges,15,,16
+Cancers,Facing sexual health challenges,15,,4
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,10
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,21
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,7
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,19
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,6
+Lack of knowledge in harm reduction,Lack of knowledge,8,9,10
+Sexual risk behaviours,Facing sexual health challenges,15,,6
+Sexual risk behaviours,Facing sexual health challenges,15,,20
+Sexual risk behaviours,Facing sexual health challenges,15,,6
+Sexual risk behaviours,Facing sexual health challenges,15,,20
+Barriers to physical activity,Barriers to wellbeing,18,9,22
+Barriers to screening,Barriers to wellbeing,18,9,11
+Internalized homophobia,Minority stress,16,11,4
+Deprivation,Being exposed to socio-economic disadvantages,14,,5
+Ageism,Discrimination,6,9,16
+Unemployment,Being exposed to socio-economic disadvantages,14,,22
