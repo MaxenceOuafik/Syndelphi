@@ -1,5 +1,5 @@
 library(readr)
-demog_data <- read_delim("data/demographic_data.csv", 
+demog_data <- read_delim(here::here("data/demographic_data.csv"), 
                                delim = ";", 
                                escape_double = FALSE, 
                                col_types = cols(DEM02 = col_factor(levels = c("Cisgenre", 
@@ -18,4 +18,7 @@ demog_data <- read_delim("data/demographic_data.csv",
                                locale = locale(encoding = "ISO-8859-1"), 
                                trim_ws = TRUE)
 
-codes_data <- read_csv("data/codes_cases_cat.csv")
+codes_data <- read_csv(here::here("data/codes_cases_cat.csv"))
+
+codes_data_fr <- read_csv(here::here("data/codes_cases_cat_fr.csv"),
+                          locale = locale(encoding = "UTF-8"))
