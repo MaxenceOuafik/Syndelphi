@@ -1,0 +1,170 @@
+---
+title: "Résultats du premier tour du Delphi"
+format:
+  revealjs:
+    transition: fade
+    transition-speed: slow
+    theme: [default, syndelphi.scss]
+editor: visual
+bibliography: references.bib
+logo: logo.jpg
+footer: "Syndelphi - Résultats du premier tour"
+---
+
+```{r Data include=FALSE}
+source(here::here("scripts/import_data.R"), local = knitr::knit_global())
+source(here::here("scripts/tidy_data.R"), local = knitr::knit_global())
+```
+
+# {{< fa chart-pie >}} Données démographiques {background-color="#006f7d"}
+
+# {{< fa brands searchengin >}} Analyse thématique des questions ouvertes {background-color="#006f7d"}
+
+## Structure du questionnaire
+
+Trois questions principales étaient posées aux participants :
+
+1.  Au niveau de la [**santé mentale**]{.underline}, quels sont, d'après votre expérience, les principaux problèmes auxquels les hommes \[transgenres ou cisgenres\] ayant des rapports sexuels avec d'autres hommes sont confrontés ? 
+2.  Au niveau de la [**santé physique**]{.underline}, \[...\]
+3.  Au niveau du [**bien-être social**]{.underline}, \[...\]
+
+------------------------------------------------------------------------
+
+Ces questions étaient dédoublées de telle sorte à ce que les participants cisgenres répondent pour les HSH cisgenres tandis que les participants transgenres répondent pour les HSH transgenres.
+
+------------------------------------------------------------------------
+
+En plus de ces trois questions, les répondants étaient invités à justifier leur choix avec une sous-question *"Pourquoi pensez-vous que ces éléments sont les plus importants dans la vie des HSH ?"*
+
+## Analyse des résultats
+
+### Méthode d'analyse
+
+-   Les réponses aux questions ouvertes ont été importées dans QualCoder3 pour les coder
+
+-   Une analyse inductive des réponses a permis de mettre au point un guide de codage pour l'analyse thématique de contenu
+
+## Thèmes et sous-thèmes
+
+-   Une première version du guide de codage mettait en évidence des thèmes qui recoupaient les questions ouvertes ("Santé mentale", "Santé physique", "Bien-être social").
+
+-   Cette première classification des thèmes a été par la suite revue pour deux raisons :
+
+    -   Les réponses mélangeaient les composantes sociales, psychologiques et physiques
+
+    -   Certains thèmes et sous-thèmes ne pouvaient s'inscrire dans une démarcation stricte des composantes bio-psycho-sociales
+
+## Thèmes
+
+**`r length(unique(codes_tidy_fr$theme))` thèmes** principaux ont été identifiés après analyse :
+
+::: incremental
+-   Affronter des difficultés au niveau de la santé mentale
+
+-   Naviguer à travers des dynamiques intra-communautaires délétères
+
+-   Survivre dans une société normative
+
+-   Être exposé à des désavantages socio-économiques
+
+-   Affronter des difficultés au niveau de la santé sexuelle
+:::
+
+## Sous-thèmes
+
+Ces thèmes sont divisés en **`r sum(!is.na(unique(codes_tidy_fr$subtheme)))` sous-thèmes** :
+
+::: incremental
+-   Symptômes d'internalisation
+-   Symptômes d'externalisation
+-   Stress minoritaire
+-   Discrimination
+-   Pressions normatives
+-   Manque de soutien social
+-   Manque de connaissance
+-   Barrières au bien-être
+:::
+
+## Hiérarchie des thèmes {.smaller}
+
+```{r Sunburst_code include = FALSE}
+source(here::here("scripts/create_sunburst.R"),  encoding = "UTF-8")
+```
+
+Un diagramme en rayons de soleil permet de mieux visualiser cette hiérarchie de thèmes et de sous-thèmes. Il permet également de comparer les thèmes évoqués par les participants cisgenres et transgenres.
+
+Les thèmes les plus fréquents des participants transgenres portaient sur les **difficultés à survivre dans une société normative**. Les répondants cisgenres, de leur côté, évoquaient plus fréquemment des thèmes en lien avec leur **santé mentale**.
+
+```{r Sunburst_plot echo = FALSE, message=FALSE, warning=FALSE}
+
+subplot(sunburst_C_fr, sunburst_T_fr) |>
+  layout(grid = list(columns =2, rows = 1),
+         margin = list(l = 0, r = 0, b = 0, t = 50),
+         title = "Thèmes des experts cisgenres (gauche) et transgenres (droite)")
+
+```
+
+------------------------------------------------------------------------
+
+## Thèmes principaux par répondants {.smaller}
+
+```{r Bar_code echo=FALSE, message=FALSE, warning=FALSE}
+
+source(here::here("scripts/create_barchart.R"), local = knitr::knit_global())
+```
+
+En regardant un peu plus dans le détail, on remarque que la solitude, la faible estime de soi, le mauvais accès au soin, ainsi que la dépression étaient les 4 thèmes les plus fréquents des répondants cisgenres. La totalité des répondants transgenres, de leur côté, évoqué des difficultés liées à la cisnormativité de la société et près des 3/4 ont mentionné la transphobie. Les questions d'estime de soi et de solitude n'étaient mentionnées qu'après, mais [il est important de noter que l'estime de soi était mentionnée dans une même proportion pour les répondants cisgenres et transgenres]{.fragment .highlight-blue}.
+
+::: columns
+::: {.column width="50%"}
+```{r Barplot_C echo=FALSE, message=FALSE, warning=FALSE}
+
+barplot_C_fr
+```
+:::
+
+::: {.column width="50%"}
+```{r Barplot_T echo=FALSE, message=FALSE, warning=FALSE}
+
+barplot_T_fr
+```
+:::
+:::
+
+## {{< fa people-group >}} Thème 1 : survivre dans une société normative
+
+### Le poids de la solitude
+
+L'impact de la solitude sur la vie des HSH était palpable dans les réponses des experts cisgenres et transgenres.
+
+Les répondants cisgenres indiquaient en outre que cette solitude tendait à s'accroître en vieillissant et devenait encore plus marquée chez les seniors HSH, en lien avec l'âgisme qu'ils subissent et le désintérêt pour les thématiques de santé qui les concernent, tel que le vieillissement en tant que PVVIH [^1].
+
+[^1]: Personne vivant avec le VIH
+
+------------------------------------------------------------------------
+
+### Le poids de la solitude
+
+Les parcours migratoires des HSH renforçaient également cette solitude, notamment à travers un isolement progressif des HSH migrants qui, à force d'expérience négative dans leurs parcours, de leur pays d'origine à l'arrivée en Belgique, s'éloigner progressivement des autres.
+
+------------------------------------------------------------------------
+
+### Le poids de la solitude
+
+Ce lien entre stress minoritaire et solitude, et plus particulièrement entre anticipation d'évènements négatifs et isolement, était également explicité dans les réponses d'un expert transgenre, dans un contexte de transphobie et de cisnormativité.
+
+La dissimulation de l'identité, plus présente dans les réponses des experts cisgenres, constituait un autre facteur de stress minoritaire qui contribuait à l'isolement des HSH.
+
+------------------------------------------------------------------------
+
+### Le poids de la solitude
+
+En outre, plusieurs experts ont évoqué les liens bidirectionnels entre la solitude et une plus faible confiance en soi, pointant du doigt les possibilités d'agir sur l'estime de soi en brisant la solitude.
+
+------------------------------------------------------------------------
+
+### L'impact des pressions normatives
+
+Les pressions normatives étaient tout particulièrement évoquées par les experts transgenres, la totalité d'entre eux ayant évoqué l'impact de la **cisnormativité** dans leur vie ainsi que dans celles de leurs usagers.
+
+Ces pressions cisnormatives concernaient surtout **l'apparence physique** ainsi que **l'anatomie**. Elles étaient liées à des situations de rejet, à la fois dans la société, mais également avec des partenaires romantiques ou sexuels cisgenres. L'habitude de la déception suscitée par ces rejets répétés était liée à une plus **faible estime de soi** ainsi qu'à des risques de relations abusives.
