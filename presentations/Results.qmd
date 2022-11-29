@@ -5,6 +5,9 @@ format:
     transition: fade
     transition-speed: slow
     theme: [default, syndelphi.scss]
+    slide-number: true
+    chalkboard: true
+    multiplex: true
 editor: visual
 bibliography: references.bib
 logo: logo.jpg
