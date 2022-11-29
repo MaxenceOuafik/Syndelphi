@@ -1,0 +1,177 @@
+---
+title: "Résultats du premier tour du Delphi"
+format:
+  revealjs:
+    transition: fade
+    transition-speed: slow
+    theme: [default, syndelphi.scss]
+    slide-number: true
+    chalkboard: true
+    multiplex: true
+    controls: true
+editor: visual
+bibliography: references.bib
+logo: logo.jpg
+footer: "Syndelphi - Feedback du premier tour"
+---
+
+```{r Data, include=FALSE}
+source(here::here("scripts/import_data.R"), encoding = "UTF-8")
+source(here::here("scripts/tidy_code_data.R"), encoding = "UTF-8")
+source(here::here("scripts/prepare_demog_data.R"),  encoding = "UTF-8")
+```
+
+# {{< fa face-smile-beam >}} Merci ! {background-color="#006f7d"}
+
+Merci d'avoir participé à ce premier tour de l'étude !
+
+Votre temps et votre expertise nous ont été précieux.
+
+Cette courte présentation a pour but de vous montrer ce qui est ressorti de cette première vague, *dans votre groupe d'experts*, afin de mieux préparer la suite !
+
+```{r Demog_data, include=FALSE}
+source(here::here("scripts/create_demog_plots.R"), encoding = "UTF-8")
+```
+
+# {{< fa brands searchengin >}} Réponses aux questions ouvertes {background-color="#006f7d"}
+
+## Thèmes
+
+**`r length(unique(codes_tidy_fr$theme))` thèmes** principaux sont ressortis des réponses des experts :
+
+::: incremental
+-   Affronter des difficultés au niveau de la santé mentale
+
+-   Naviguer à travers des dynamiques intra-communautaires délétères
+
+-   Survivre dans une société normative
+
+-   Être exposé à des désavantages socio-économiques
+
+-   Affronter des difficultés au niveau de la santé sexuelle
+:::
+
+## Sous-thèmes
+
+Ces thèmes sont divisés en **7 sous-thèmes** :
+
+::: incremental
+-   Symptômes d'internalisation (dépression, dysphorie, faible estime de soi)
+-   Stress minoritaire
+-   Discrimination
+-   Pressions normatives (cisnormativité, hétéronormativité, pressions patriarcales sur la masculinité)
+-   Manque de soutien social
+-   Manque de connaissance
+-   Barrières au bien-être
+:::
+
+## Hiérarchie des thèmes {.smaller}
+
+```{r Sunburst_code, include = FALSE}
+source(here::here("scripts/create_sunburst.R"),  encoding = "UTF-8")
+```
+
+Pour mieux visualiser ces différents thèmes et sous-thèmes et leur organisation, nous avons mis au point un diagramme en rayons de soleil. N'hésitez pas à cliquer dessus pour interagir avec !
+
+```{r Sunburst_plot, echo = FALSE, message=FALSE, warning=FALSE}
+
+sunburst_T_fr
+```
+
+------------------------------------------------------------------------
+
+## Thèmes principaux {.smaller}
+
+```{r Bar_code, echo=FALSE, message=FALSE, warning=FALSE}
+
+source(here::here("scripts/create_barchart.R"), local = knitr::knit_global())
+```
+
+La cisnormativité a été pointée du doigt par la totalité des répondants. Celle-ci se manifestait principalement vis-à-vis de **l'apparence physique** ainsi que **l'anatomie**, avec de fortes pressions autour de l'apparence des hommes transgenres, y compris au niveau génital. Ces pressions pouvaient aller jusqu'à entraîner des situations de rejet **transphobe**, à la fois dans la société, mais également avec des partenaires romantiques ou sexuels cisgenres. L'habitude de la déception suscitée par ces rejets répétés était liée à une plus **faible estime de soi**, **à la solitude**, ainsi qu'à des risques de relations abusives.
+
+```{r Barplot_T, echo=FALSE, message=FALSE, warning=FALSE}
+
+barplot_T_fr + labs(title = 'Thèmes principaux')
+```
+
+------------------------------------------------------------------------
+
+### Normativité et accès au soin
+
+Par ailleurs, la cisnormativité était également liée à un **manque d'accès au soin** dû à un **manque d'ouverture** d'esprit des médecins sur la diversité des corps masculins. Cela entraînait également des **freins au dépistage** des ISTs, les campagnes de prévention ainsi que les pratiques de dépistage étant décrites comme prévues pour des HSH cisgenres uniquement.
+
+------------------------------------------------------------------------
+
+### Les pressions sur la masculinité
+
+Les pressions patriarcales sur la masculinité venaient s'immiscer dans les dynamiques sociales intracommunautaires, en instaurant un climat de **compétitivité** ainsi qu'en imposant des **diktats** sur l'apparence physique et la jeunesse.
+
+------------------------------------------------------------------------
+
+### Discriminations
+
+Deux formes de discrimination ont été mises en avant dans les réponses : **l'homophobie** et la **transphobie**. Ces discriminations s'inscrivaient tout particulièrement dans le cadre familial et dans l'environnement social plus élargi. La question de l'intersectionalité était également abordée, vu la combinaison d'homophobie et de transphobie que les HSH transgenres rencontrent dans leur existence. En outre, certains experts indiquaient que la transphobie avait un impact sur la santé mentale en accroissant le sentiment de **dysphorie**.
+
+Ces discriminations pouvaient se manifester par de la **violence** et des **micro-agressions**, notamment au sein du foyer familial.
+
+------------------------------------------------------------------------
+
+### Un manque de connaissance et d'accès à l'information
+
+Le manque de connaissance sur des thématiques spécifiques aux HSH transgenres a été relevée. Celui-ci se manifestait par un manque de connaissance et d'accès à des informations trans-spécifiques sur l'impact du **THAG** [^1] vis-à-vis du risque d'acquisition **d'IST**.
+
+[^1]: Traitement hormonal d'affirmation de genre
+
+Dans le même ordre d'idée, il y avait un manque d'accès à des médecins **informés et respectueux**.
+
+------------------------------------------------------------------------
+
+### Estime de soi et besoin de validation masculine
+
+Le manque de confiance en soi était un des points les plus fréquemment cités. Outre le lien avec la **solitude**, ce manque d'estime de soi était lié à une **relation ambivalente avec les HSH cisgenres**.
+
+D'une part, un des participants indiquait que certains hommes transgenres avaient besoin que leur **masculinité soit validée** à travers des rapports avec des hommes cisgenres. Le revers de cela étant, selon un autre participant, que le manque de **légitimité** ressentis par certains hommes transgenres leur faisait éviter d'avoir des relations avec des hommes cisgenres, de peur de ne pas être reconnus comme des hommes à part entière. Par ailleurs, la **dysphorie** de certains hommes transgenres pouvait être majorée au travers de rapports sexuels avec des hommes cisgenres.
+
+------------------------------------------------------------------------
+
+En outre, des questions déplacées, une focalisation sur le génital, et des rejets de la part des HSH cisgenres était évoqués par plusieurs participants transgenres.
+
+Enfin, à cause d'un manque d'estime de soi, certains HSH pouvaient avoir des difficultés à formuler leurs limites, entraînant des pratiques sexuelles à risque non consenties. Cela arrivait, par exemple, si un partenaire insistait pour ne pas porter de préservatif et que l'autre n'osait pas affirmer ses besoins à ce niveau.
+
+------------------------------------------------------------------------
+
+### Santé mentale
+
+Au niveau de la santé mentale, c'est la dépression et la dysphorie qui sont le plus souvent revenus. La dysphorie, intensifiée par la transphobie, pouvait à son tour mener à de l'anxiété ou à de la dépression.
+
+------------------------------------------------------------------------
+
+### Une hypersexualisation intra- et extra-communautaire
+
+L'hypersexualisation évoquée par les experts du Delphi concernait à la fois les préjugés externes sur la vie sexuelle débridée des HSH, mais également des pressions internes de se conformer à ce stéréotype.
+
+Cette hypersexualisation était liée aux pressions patriarcales sur la masculinité, avec une vision des hommes comme étant naturellement intéressés par le sexe, phénomène qui serait encore amplifié en contexte HSH.
+
+En outre, un répondant liait cisnormativité et hypersexualisation en pointant du doigt que la vision hypersexualisée des HSH évoquait une imagerie cisnormative où le sexe entre hommes est implicitement lu comme impliquant la possession et l'usage de pénis.
+
+------------------------------------------------------------------------
+
+### Santé sexuelle
+
+Au niveau de la santé sexuelle, les réponses tournaient autour des ISTs, y compris le VIH.
+
+------------------------------------------------------------------------
+
+### Désavantages socio-économiques
+
+Au niveau socio-économique, les différents éléments évoqués étaient la précarité et les difficultés à trouver un emploi à cause de la transphobie des employeurs.
+
+# {{< fa person-walking-dashed-line-arrow-right >}} Et maintenant ? {background-color="#006f7d"}
+
+Ce questionnaire a permis de faire sortir beaucoup d'idées intéressantes de votre part et, pour ça, nous vous remercions encore !
+
+Maintenant, il va falloir choisir les éléments les plus importants parmi tout ce qui a été évoqués, ainsi que parmi d'autres éléments issus de la littérature scientifique.
+
+La prochaine vague du Delphi ne comportera pas de question ouverte. Vous devrez juste indiquer sur une échelle de 1 à 5 l'importance des différents éléments proposés, en fonction de votre expérience de terrain et de votre vécu personnel.
+
+Nous reviendrons vers vous dès que ce sera fini avec un nouveau feedback !

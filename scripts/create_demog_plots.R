@@ -8,7 +8,7 @@ gender_pie <- plot_ly(gender_data,
                       textinfo = "label+percent",
                       showlegend = F,
                       marker = list(colors = c("#5fa3b0", "#ee803c"))) |>
-  layout(title = "Répartition des experts",
+  layout(title = "Répartition des experts par mobilité de genre",
          margin = list(t=50))
 
 ## A bar chart for the province repartition 
@@ -40,6 +40,6 @@ age_bar <-plot_ly(age_data,
             hoverinfo = 'text',
             textposition = "none") |>
   layout(barmode = 'group',
-         title = "Répartition des experts, par âge et positionnement de genre",
+         title = "Répartition des experts, par âge et mobilité de genre",
          xaxis = list(title = "Tranches d'âge"),
          yaxis = list(title = "Nombre d'experts"))

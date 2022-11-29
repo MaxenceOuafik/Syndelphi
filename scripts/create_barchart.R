@@ -18,7 +18,7 @@ barplot_T_fr <- codes_tidy_fr |>
   scale_x_discrete(position = "top") +
   labs(title = "Participants transgenres",
        x = "Codes",
-       y = "% of resp.") +
+       y = "% des répondants") +
   coord_flip()
 
 barplot_C_fr <- codes_tidy_fr |>
@@ -34,7 +34,7 @@ barplot_C_fr <- codes_tidy_fr |>
   scale_fill_manual(values = c("#5fa3b0")) +
   labs(title = "Participants cisgenres",
        x = "Codes",
-       y = "% of resp.") +
+       y = "% des répondants") +
   coord_flip()
 
 barplot_fr <- ggarrange(barplot_C_fr, barplot_T_fr,

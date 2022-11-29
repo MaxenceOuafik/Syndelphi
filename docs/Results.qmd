@@ -31,9 +31,8 @@ source(here::here("scripts/create_demog_plots.R"), encoding = "UTF-8")
 ::: incremental
 -   **17** experts ont répondu à notre questionnaire
 
-```{=html}
 <!-- -->
-```
+
 -   Leur ancienneté dans l'associatif allait de `r min(demog_data$ASS05)` à `r max(demog_data$ASS05)` pour une ancienneté médiane de `r median(demog_data$ASS05)` ans.
 
 -   **65%** des experts interrogés étaient sur le terrain au moins une fois par semaine et un tiers étaient sur le terrain quasi-quotidiennement.
@@ -43,7 +42,7 @@ source(here::here("scripts/create_demog_plots.R"), encoding = "UTF-8")
 -   Certains experts avaient des missions additionnelles telles que la formation des professionnel·le·s à l'accueil des HSH, la réduction des risques, la sensibilisation vers le grand public, ou le logement des personnes LGBTQIA+ qui se retrouvent à la rue.
 :::
 
-## Positionnement de genre
+## Mobilité de genre
 
 La répartition des experts est relativement équilibrée, avec un léger déséquilibre en faveur des experts cisgenres, qui représentent 59% des participants, soit 10 experts sur 17.
 
@@ -51,7 +50,7 @@ La répartition des experts est relativement équilibrée, avec un léger désé
 gender_pie
 ```
 
-## Répartition géographique 
+## Répartition géographique
 
 Au niveau géographique, les experts interrogés travaillaient dans les cinq provinces francophones ainsi que dans la région Bruxelles-Capitale. On remarque toutefois que les provinces du Hainaut, du Luxembourg et du Brabant Wallon sont les moins bien représentées dans notre échantillon.
 
@@ -274,7 +273,7 @@ Le faible accès au soin des HSH était directement lié aux thèmes de pression
 
 ## {{< fa face-frown >}} Thème 2 : affronter des difficultés au niveau de la santé mentale {.smaller}
 
-### Estime de soin et besoin de validation masculine
+### Estime de soi et besoin de validation masculine
 
 Le manque de confiance en soi était un des points les plus fréquemment cités, à la fois par les participants cisgenres et transgenres. Outre le lien susmentionné avec la **solitude**, ce manque d'estime de soi était lié chez les participants transgenres à une **relation ambivalente avec les HSH cisgenres**.
 
@@ -336,7 +335,7 @@ L'hypersexualisation évoquée par les experts du Delphi concernait à la fois l
 
 Cette hypersexualisation était liée aux pressions patriarcales sur la masculinité, avec une vision des hommes comme étant naturellement davantage intéressés par le sexe, phénomène qui serait encore amplifié en contexte HSH.
 
-En outre, un répondant transgenres liait cisnormativité et hypersexualisation en pointant du doigt que la vision hypersexualisée des HSH évoquait une imagerie cisnormative où le sexe entre hommes est implicitement lu comme impliquant la possession et l'usage de pénis.
+En outre, un répondant transgenre liait cisnormativité et hypersexualisation en pointant du doigt que la vision hypersexualisée des HSH évoquait une imagerie cisnormative où le sexe entre hommes est implicitement lu comme impliquant la possession et l'usage de pénis.
 
 ## {{< fa virus >}} Thème 4 : affronter des difficultés au niveau de la santé sexuelle
 
