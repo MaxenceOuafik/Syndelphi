@@ -12,11 +12,61 @@ footer: "Syndelphi - Résultats du premier tour"
 ---
 
 ```{r Data, include=FALSE}
-source(here::here("scripts/import_data.R"), local = knitr::knit_global())
-source(here::here("scripts/tidy_data.R"), local = knitr::knit_global())
+source(here::here("scripts/import_data.R"), encoding = "UTF-8")
+source(here::here("scripts/tidy_code_data.R"), encoding = "UTF-8")
+source(here::here("scripts/prepare_demog_data.R"),  encoding = "UTF-8")
 ```
 
-# {{< fa chart-pie >}} Données démographiques {background-color="#006f7d"}
+# {{< fa chart-pie >}} Profil des experts {background-color="#006f7d"}
+
+```{r Demog_data, include=FALSE}
+source(here::here("scripts/create_demog_plots.R"), encoding = "UTF-8")
+```
+
+## Caractéristiques général des répondants {.smaller}
+
+::: incremental
+-   **17** experts ont répondu à notre questionnaire
+
+```{=html}
+<!-- -->
+```
+-   Leur ancienneté dans l'associatif allait de `r min(demog_data$ASS05)` à `r max(demog_data$ASS05)` pour une ancienneté médiane de `r median(demog_data$ASS05)` ans.
+
+-   **65%** des experts interrogés étaient sur le terrain au moins une fois par semaine et un tiers étaient sur le terrain quasi-quotidiennement.
+
+-   Les missions principales étaient *l'accueil* **(N = 13)** et la *socialisation* **(N = 12)**, suivies par la *santé communautaire* **(N = 7)**.
+
+-   Certains experts avaient des missions additionnelles telles que la formation des professionnel·le·s à l'accueil des HSH, la réduction des risques, la sensibilisation vers le grand public, ou le logement des personnes LGBTQIA+ qui se retrouvent à la rue.
+:::
+
+## Positionnement de genre
+
+La répartition des experts est relativement équilibrée, avec un léger déséquilibre en faveur des experts cisgenres, qui représentent 59% des participants, soit 10 experts sur 17.
+
+```{r Gender_data, echo=FALSE, warning=FALSE, message=FALSE}
+gender_pie
+```
+
+## Répartition géographique 
+
+Au niveau géographique, les experts interrogés travaillaient dans les cinq provinces francophones ainsi que dans la région Bruxelles-Capitale. On remarque toutefois que les provinces du Hainaut, du Luxembourg et du Brabant Wallon sont les moins bien représentées dans notre échantillon.
+
+```{r Province_plot, echo=FALSE, warning=FALSE, message=FALSE}
+province_bar
+```
+
+## Âge
+
+Enfin, au niveau de l'âge, notre échantillon est biaisé vers des tranches d'âge assez jeunes, principalement pour les experts transgenres dont aucun ne dépasse la trentaine. Pour les experts cisgenres, en revanche, deux experts se situaient dans la quarantaine et un, dans la soixantaine.
+
+```{r Age_plot, echo=FALSE, message=FALSE, warning=FALSE}
+age_bar
+```
+
+## En résumé
+
+Malgré un nombre de répondant limité, notre échantillon d'experts a une diversité satisfaisante et une expérience de terrain suffisante. Aucune province n'a été oubliée et la plupart des répondants avaient un contact au moins hebdomadaire avec le public.
 
 # {{< fa brands searchengin >}} Analyse thématique des questions ouvertes {background-color="#006f7d"}
 
