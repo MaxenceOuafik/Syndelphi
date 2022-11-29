@@ -30,3 +30,15 @@ age_data <- demog_data |>
   select(id, DEM02, DEM03) |>
   count(DEM02, DEM03) |>
   pivot_wider(names_from = "DEM02", values_from = "n")
+
+## Finally, we performed the same kind of transformation for their tasks as for their provinces of action
+
+task_data <- demog_data |>
+  select(1, 5:7) |>
+  dplyr::rename("Accueil" = "ASS02[Welcome]",
+                "Santé communautaire" = "ASS02[ComHealth]",
+                "Socialisation" = "ASS02[Social]") |>
+  pivot_longer(2:4, names_to = "tâches") |>
+  filter(value == TRUE) |>
+  count(tâches) |>
+  dplyr::mutate(percent = scales::percent(n/17))
