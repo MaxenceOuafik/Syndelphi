@@ -7,7 +7,7 @@ format:
     theme: [default, syndelphi.scss]
     slide-number: true
     chalkboard: true
-    multiplex: true
+    multiplex: false
     controls: true
 editor: visual
 bibliography: references.bib

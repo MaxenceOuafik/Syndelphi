@@ -15,7 +15,8 @@ barplot_T_fr <- codes_tidy_fr |>
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
   scale_y_reverse (labels=scales::percent) +
   scale_fill_manual(values = c("#ee803c")) +
-  scale_x_discrete(position = "top") +
+  scale_x_discrete(position = "top",
+                   labels = scales::label_wrap(20)) +
   labs(title = "Participants transgenres",
        x = "Codes",
        y = "% des répondants") +
@@ -32,6 +33,7 @@ barplot_C_fr <- codes_tidy_fr |>
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
   scale_y_continuous (labels=scales::percent, limits = c(0,1)) +
   scale_fill_manual(values = c("#5fa3b0")) +
+  scale_x_discrete(labels = scales::label_wrap(20))+
   labs(title = "Participants cisgenres",
        x = "Codes",
        y = "% des répondants") +

@@ -5,7 +5,8 @@ library(tidyverse)
 ## First, we start by a simple count of gender position data 
 gender_data <- demog_data |>
   count(DEM02) |>
-  mutate(DEM02 = ifelse(DEM02 == "Cisgenre", "Experts HSH cisgenres", "Experts HSH transgenres"))
+  mutate(DEM02 = ifelse(DEM02 == "Cisgenre", "Experts HSH cisgenres", "Experts HSH transgenres")) |>
+  mutate(pct = scales::percent(n/sum(n))) 
 
 ## Then, we move to the Provinces data. Since many participants work in more than one province, there's one 
 ## column by province with boolean data. We thus need to tidy the data by pivoting the table, then we count the
@@ -21,7 +22,9 @@ province_data <- demog_data |>
                 "Bruxelles" = "ASS04[BXL]") |>
   pivot_longer(2:7, names_to = "province") |>
   filter(value == TRUE) |>
-  count(province)
+  count(province) |>
+  mutate(province = fct_reorder(province, n, .desc = T))
+
 
 ## For the age class, we choose to separate values from cisgender and transgender experts, due to the 
 ## hypothetized age difference between the two groups 
@@ -42,3 +45,5 @@ task_data <- demog_data |>
   filter(value == TRUE) |>
   count(tâches) |>
   dplyr::mutate(percent = scales::percent(n/17))
+
+.N_trans <- sum(demog_data$DEM02 == "Transgenre")

@@ -1,0 +1,196 @@
+---
+title: "Résultats du premier tour du Delphi"
+format:
+  revealjs:
+    transition: fade
+    transition-speed: slow
+    theme: [default, syndelphi.scss]
+    slide-number: true
+    chalkboard: true
+    multiplex: false
+    controls: true
+editor: visual
+bibliography: references.bib
+logo: logo.jpg
+footer: "Syndelphi - Feedback du premier tour"
+---
+
+```{r Data, include=FALSE}
+source(here::here("scripts/import_data.R"), encoding = "UTF-8")
+source(here::here("scripts/tidy_code_data.R"), encoding = "UTF-8")
+source(here::here("scripts/prepare_demog_data.R"),  encoding = "UTF-8")
+```
+
+# {{< fa face-smile-beam >}} Merci ! {background-color="#006f7d"}
+
+Merci d'avoir participé à ce premier tour de l'étude !
+
+Votre temps et votre expertise nous ont été précieux.
+
+Cette courte présentation a pour but de vous montrer ce qui est ressorti de cette première vague, *dans votre groupe d'experts*, afin de mieux préparer la suite !
+
+```{r Demog_data, include=FALSE}
+source(here::here("scripts/create_demog_plots.R"), encoding = "UTF-8")
+```
+
+# {{< fa brands searchengin >}} Réponses aux questions ouvertes {background-color="#006f7d"}
+
+## Thèmes
+
+**`r length(unique(codes_tidy_fr$theme))` thèmes** principaux sont ressortis des réponses des experts :
+
+::: incremental
+-   Affronter des difficultés au niveau de la santé mentale
+
+-   Naviguer à travers des dynamiques intra-communautaires délétères
+
+-   Survivre dans une société normative
+
+-   Être exposé à des désavantages socio-économiques
+
+-   Affronter des difficultés au niveau de la santé sexuelle
+:::
+
+## Sous-thèmes
+
+Ces thèmes sont divisés en **8 sous-thèmes** :
+
+::: incremental
+-   Symptômes d'internalisation (dépression, faible estime de soi)
+-   Symptômes d'externalisation (usage et abus de substances, y compris alcool)
+-   Stress minoritaire
+-   Discrimination
+-   Pressions normatives (cisnormativité, hétéronormativité, pressions patriarcales sur la masculinité)
+-   Manque de soutien social
+-   Manque de connaissance
+-   Barrières au bien-être
+:::
+
+## Hiérarchie des thèmes {.smaller}
+
+```{r Sunburst_code, include = FALSE}
+source(here::here("scripts/create_sunburst.R"),  encoding = "UTF-8")
+```
+
+Pour mieux visualiser ces différents thèmes et sous-thèmes et leur organisation, nous avons mis au point un diagramme en rayons de soleil. N'hésitez pas à cliquer dessus pour interagir avec !
+
+```{r Sunburst_plot, echo = FALSE, message=FALSE, warning=FALSE}
+
+sunburst_C_fr
+```
+
+------------------------------------------------------------------------
+
+## Thèmes principaux {.smaller}
+
+```{r Bar_code, echo=FALSE, message=FALSE, warning=FALSE}
+
+source(here::here("scripts/create_barchart.R"), local = knitr::knit_global())
+```
+
+La **solitude** était le thème qui revenait le plus fréquemment, suivi de la **faible estime de soi**, à laquelle elle était liée. La difficulté d'avoir accès à des médecins safe et compétents ainsi que la dépression arrivaient ensuite.
+
+Les thèmes de mauvaises relations familiales, d'ISTs, d'hypersexualisation, d'anxiété, et d'abus de substance avait également été pointé du doigts par plus d'un quart des répondants.
+
+```{r Barplot_T, echo=FALSE, message=FALSE, warning=FALSE}
+
+barplot_C_fr + labs(title = 'Thèmes principaux')
+```
+
+------------------------------------------------------------------------
+
+### Le poids de la solitude
+
+La solitude était le facteur qui revenait le plus souvent dans les réponses. Celle-ci était liée au vieillissement, à la migration, au stress minoritaire, et à l'estime de soi :
+
+-   Les répondants indiquaient que la solitude tendait à s'accroître en vieillissant et devenait encore plus marquée chez les **seniors** HSH, en lien avec **l'âgisme** qu'ils subissent et le désintérêt pour les thématiques de santé qui les concernent, tel que le vieillissement en tant que **PVVIH** [^1].
+
+-   Les parcours migratoires des HSH renforçaient également cette solitude, notamment à travers un isolement progressif des **HSH migrants** qui, à force d'expériences négatives dans leurs parcours, de leur pays d'origine à l'arrivée en Belgique, s'éloignaient progressivement des autres.
+
+[^1]: Personne vivant avec le VIH
+
+------------------------------------------------------------------------
+
+-   Les réponses indiquaient en outre un lien entre stress minoritaire et solitude, et plus particulièrement entre **dissimulation de l'identité**, et **isolement**.
+
+-   En outre, plusieurs experts ont évoqué les liens bidirectionnels entre la solitude et une plus **faible confiance en soi**, pointant du doigt les possibilités d'agir sur l'estime de soi en brisant la solitude.
+
+------------------------------------------------------------------------
+
+### Les pressions sur la masculinité
+
+Les pressions patriarcales sur la masculinité venaient s'immiscer dans les dynamiques sociales intracommunautaires, en instaurant un climat de **compétitivité** ainsi qu'en imposant des **diktats** sur l'apparence physique et la jeunesse.
+
+------------------------------------------------------------------------
+
+### Discriminations
+
+Deux formes de discrimination ont été mises en avant dans les réponses : **l'homophobie**, **l'âgisme,** et la **transphobie**. Ces discriminations s'inscrivaient tout particulièrement dans le cadre familial et dans l'environnement social plus élargi.
+
+Chez les migrants HSH, cette homophobie était présente à la fois dans le pays d'origine ainsi que dans les centres d'accueil, ce qui pouvait rendre le parcours migratoire dangereux et difficile.
+
+Ces discriminations pouvaient se manifester par de la **violence** et des **micro-agressions**, notamment au sein du foyer familial.
+
+------------------------------------------------------------------------
+
+### Un manque de connaissance et d'accès à l'information
+
+Le manque de connaissance sur des thématiques spécifiques aux HSH cisgenres a été relevée. Celui-ci se manifestait par un manque de connaissance sur la réduction des risques en matière de consommation de **substance** et de **chemsex**.
+
+Dans le même ordre d'idée, il y avait un manque d'accès à des médecins **informés et respectueux**. Les pressions normatives se manifestaient ici dans le manque d'ouverture de certains médecins sur la diversité des orientations sexuelles.
+
+------------------------------------------------------------------------
+
+### Estime de soi et pratiques sexuelles à risque
+
+À cause d'un manque d'estime de soi, certains HSH pouvaient avoir des difficultés à formuler leurs limites, entraînant des pratiques sexuelles à risque non consenties. Cela arrivait, par exemple, si un partenaire insistait pour ne pas porter de préservatif et que l'autre n'osait pas affirmer ses besoins à ce niveau.
+
+------------------------------------------------------------------------
+
+### Santé mentale
+
+Au niveau de la santé mentale, divers éléments ont été cités :
+
+-   Anxiété
+
+-   Dépression
+
+-   PTSD, notamment dans les parcours migratoires
+
+-   Burnout
+
+-   Instabilité émotionnelle
+
+-   Difficultés cognitives, en lien avec un environnement carencé et un décrochage scolaire suite à des expériences négatives
+
+On retrouvait également des manifestations externes de ce mal-être interne, tel que l'usage, voire l'abus, de substance comme mécanisme de coping.
+
+------------------------------------------------------------------------
+
+### Une hypersexualisation intra- et extra-communautaire
+
+L'hypersexualisation évoquée par les experts du Delphi concernait à la fois les préjugés externes sur la vie sexuelle débridée des HSH, mais également des pressions internes de se conformer à ce stéréotype.
+
+Cette hypersexualisation était liée aux pressions patriarcales sur la masculinité, avec une vision des hommes comme étant naturellement intéressés par le sexe, phénomène qui serait encore amplifié en contexte HSH.
+
+------------------------------------------------------------------------
+
+### Santé sexuelle
+
+Au niveau de la santé sexuelle, les réponses tournaient autour des ISTs, y compris le VIH. En plus des aspects classiques de prévention, les réponses tournaient également autour des conséquences à long terme des infections sexuellement transmissibles. Cela comportait les risques de cancer suite à une infection au papillomavirus ou les comorbidités et conséquences du vieillissement avec le VIH.
+
+------------------------------------------------------------------------
+
+### Désavantages socio-économiques
+
+Au niveau socio-économique, les différents éléments évoqués étaient la précarité, le décrochage scolaire, à cause d'un environnement social défavorable, ainsi que les difficultés liées aux parcours migratoires.
+
+# {{< fa person-walking-dashed-line-arrow-right >}} Et maintenant ? {background-color="#006f7d"}
+
+Ce questionnaire a permis de faire sortir beaucoup d'idées intéressantes de votre part et, pour ça, nous vous remercions encore !
+
+Maintenant, il va falloir choisir les éléments les plus importants parmi tout ce qui a été évoqués, ainsi que parmi d'autres éléments issus de la littérature scientifique.
+
+La prochaine vague du Delphi ne comportera pas de question ouverte. Vous devrez juste indiquer sur une échelle de 1 à 5 l'importance des différents éléments proposés, en fonction de votre expérience de terrain et de votre vécu personnel.
+
+Nous reviendrons vers vous dès que ce sera fini avec un nouveau feedback !
