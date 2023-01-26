@@ -1,5 +1,5 @@
 ---
-title: "What are the main health concerns of MSM in the French-speaking Belgium ? Results from a syndemic-informed Delphi study with peer volunteers from LGBTQIA organizations"
+title: "What are the main health concerns of MSM in French-speaking Belgium ? Results from a syndemic-informed Delphi study with peer volunteers from LGBTQIA organizations"
 format: html
 editor:
     render-on-save: true
