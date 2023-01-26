@@ -47,3 +47,4 @@ task_data <- demog_data |>
   dplyr::mutate(percent = scales::percent(n/17))
 
 .N_trans <- sum(demog_data$DEM02 == "Transgenre")
+.N_cis <- sum(demog_data$DEM02 == "Cisgenre")

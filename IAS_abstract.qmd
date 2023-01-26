@@ -1,0 +1,38 @@
+---
+title: "What are the main health concerns of MSM in the French-speaking Belgium ? Results from a syndemic-informed Delphi study with peer volunteers from LGBTQIA organizations"
+format: html
+editor:
+    render-on-save: true
+---
+
+```{r import_data}
+#| include: false
+source("./scripts/import_data.R", encoding = "UTF-8")
+source("./scripts/prepare_demog_data.R", encoding = "UTF-8")
+```
+
+**Background:**  A syndemic consists of interacting epidemics producing an excess burden in a population due to harmful social condition. It has been successfully applied to the health of MSM since 2003 but the field lacks consensus on which conditions would constitute a syndemic among MSM. Furthermore, transgender MSM are nearly always omitted from syndemic research on MSM. In order to develop a research project tailored the need of MSM in French-speaking belgium, we have conducted a Delphi study to gain insight on their main health concerns. 
+\ 
+**Methods:** From September 2022, we have recruited cisgender and transgender members from LGBTQIA organizations in French-speaking Belgium. Experts were selected based on their lived experience and expertise in community-led organizations. The Delphi study consisted in three rounds designed to (1) elicit ideas on psychological, social and physical issues and their interactions ; (2) select the most relevant issues and ; (3) rank them by pertinence.  
+\
+**Results:** `r .N_cis` cisgender experts and `r .N_trans` transgender experts have participated. 
+\
+**Conclusion:**  
+\ 
+
+
+### Résultats
+- Qu'a-t'on appris ?
+- Passé
+- Spécifique, précis
+- Désagrégé 
+### Tables
+- Ne pas répéter les données 
+- Titre, légende, nom des colonnes 
+- Compte pour 5 mots par colonne ; maximum de 50 mots
+
+### Conclusions
+- Interprétation des résultats et messages clés (*Quelles sont les informations importantes de mon abstract ?*)
+- Contexte plus large et implications (*Qu'est-ce que mes résultats signifient pour le domaine ?*)
+- Recommandations et limitations (*Quelles sont les prochaines étapes ?*)
+- Eviter les banalités, les répétitions et les généralisations abusives
