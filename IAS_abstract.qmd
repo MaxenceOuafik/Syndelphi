@@ -1,8 +1,6 @@
 ---
-title: "What are the main health concerns of MSM in French-speaking Belgium ? Results from a syndemic-informed Delphi study with peer volunteers from LGBTQIA organizations"
-format: html
-editor:
-    render-on-save: true
+title: "What are the main health concerns of Men who have Sex with Men (MSM) in French-speaking Belgium? Results from a syndemic-informed Delphi study with peer volunteers from LGBTQIA organisations"
+format: docx
 ---
 
 ```{r import_data}
@@ -12,24 +10,11 @@ source("./scripts/prepare_demog_data.R", encoding = "UTF-8")
 source("./scripts/wave2_analysis.R", encoding = "UTF-8")
 ```
 
-**Background:**  A syndemic consists of interacting epidemics producing an excess burden in a population due to harmful social condition. It has been successfully applied to the health of MSM since 2003 but the field lacks consensus on which conditions would constitute a syndemic among MSM. Furthermore, transgender MSM are nearly always omitted from syndemic research on MSM. In order to develop a research project tailored the need of MSM in French-speaking belgium, we have conducted a Delphi study to gain insight on their main health concerns.
+**Background:**  A syndemic consists of interacting epidemics producing an excess burden in a disadvantaged population. It has been applied to the health of MSM since 2003 but the field lacks consensus on which conditions constitute a syndemic. Furthermore, transgender MSM are nearly always omitted from syndemic research. In order to develop a research project tailored to the need of all MSM in French-speaking Belgium, we have thus conducted a Delphi study to gain insight on their main health concerns.
 \
-**Methods:** From September 2022, we have recruited cisgender and transgender members from LGBTQIA organizations in French-speaking Belgium. Experts were selected based on their lived experience and expertise in community-led organizations. The Delphi study consisted in three rounds designed to (1) elicit ideas on psychological, social and physical issues and their interactions ; (2) select the most relevant issues and ; (3) rank them by pertinence.  
+**Methods:** From September 2022, we have recruited cisgender and transgender members from LGBTQIA organisations in French-speaking Belgium. Experts were selected based on their lived experience and expertise in community-led organisations. The Delphi study consisted in three rounds designed to (1) elicit ideas on psychological, social and physical issues and their interactions; (2) select the most relevant issues and; (3) rank them by pertinence.
 \
-**Results:** `r .N_cis` cisgender experts and `r .N_trans` transgender experts have participated in the study. During the second round, cisgender and transgender experts had to score `r ncol(wave2_data_cis)` and `r ncol(wave2_data_trans)` respectively on a 5 item Likert scale. Using a consensus threshold of ≥ 80% experts rating ≥ 4, `r length(variable_cisgender[["80%"]])` issues were selected by cisgender experts : low self-esteem, loneliness, low social support, risky sexual behaviours, chemsex, intra-community hypersexualisation, and patriarchal pressures on masculinity.     
+**Results:** `r .N_cis` cisgender experts and `r .N_trans` transgender experts have participated in the study. During the second round, cisgender and transgender experts had to score `r ncol(wave2_data_cis)` and `r ncol(wave2_data_trans)` respectively on a five-item Likert scale. Using a consensus threshold of ≥ 80% experts rating ≥ 4, `r length(variable_cisgender[["80%"]])` issues were selected by cisgender experts: low self-esteem, loneliness, low social support, sexual risk behaviours, chemsex, intra-community hypersexualisation, and patriarchal pressures on masculinity. Using the same criterion, transgender experts have selected `r length(variable_transgender[["80%"]])` variables: anxiety, suicidality, loneliness, low social support, deprivation, transphobia, poor healthcare access, identity denial, as well as lack of knowledge on transness. Of note, 100% of cisgender experts agreed on sexual risk behaviours while all transgender experts agreed on suicidality and transphobia. Variables ranking is ongoing.
 \
-**Conclusion:**  
+**Conclusion:** While important topics, MSM health goes beyond HIV and STI, as our expert panel showed. Researchers should therefore focus on the broader social context and mental health disparities while studying the health of this key population. Consulting with the local community, as we did in this paper, may help researchers to focus on the community’s priorities. The conditions selected in this Delphi will be explored in detail in a future qualitative study.
 \ 
-
-
-### Résultats
-- Qu'a-t'on appris ?
-- Passé
-- Spécifique, précis
-- Désagrégé 
-
-### Conclusions
-- Interprétation des résultats et messages clés (*Quelles sont les informations importantes de mon abstract ?*)
-- Contexte plus large et implications (*Qu'est-ce que mes résultats signifient pour le domaine ?*)
-- Recommandations et limitations (*Quelles sont les prochaines étapes ?*)
-- Eviter les banalités, les répétitions et les généralisations abusives
