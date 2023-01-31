@@ -6,7 +6,7 @@ source("./scripts/wave2_cleaning.R", encoding = "UTF-8")
 
 select_variables <- function(x, threshold) {
     if ((sum(x == "Important", na.rm = TRUE) + 
-    sum(x == "Très important", na.rm = TRUE)) >= (threshold * nrow(x))) {
+    sum(x == "Très important", na.rm = TRUE)) >= round(threshold * nrow(x))) {
         variablename <- colnames(x)
     } else {
        variablename <- NULL
