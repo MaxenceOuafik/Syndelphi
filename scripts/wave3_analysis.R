@@ -14,6 +14,13 @@ wave3_cis_rang <- wave3_cis |>
     summarize(rang_moy = round(mean(rang), digits = 1)) |>
     arrange(rang_moy)
 
+wave3_cis_rang <- wave3_cis |>
+    rowid_to_column() |>
+    pivot_longer(`1`:`13`, names_to = "rang", values_to = "variables") |>
+    mutate(rang = as.numeric(rang)) |>
+    pivot_wider(names_from = "variables", values_from = "rang") |>
+    select(-rowid)
+
 wave3_trans <- wave3_data |>
     select(`Q31T[1]`:`Q31T[13]`) |>
     filter(!is.na(`Q31T[1]`))
@@ -29,6 +36,7 @@ wave3_trans_rang <- wave3_trans |>
     summarize(rang_moy = round(mean(rang), digits = 1)) |>
     arrange(rang_moy)
 
-tau_x(wave3_cis)
-data(BU)
-RD <- BU[, 1:3]
+test <- consrank(wave3_cis_rang, 
+                 ps = FALSE,
+                 algorithm = "quick")
+test
