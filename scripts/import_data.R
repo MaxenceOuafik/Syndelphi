@@ -37,3 +37,5 @@ wave2_data <- read_delim(here::here("data/wave2.csv"),
                                                 token = col_skip()))
 wave2_data <- as.data.frame(unclass(wave2_data), 
                             stringsAsFactors = TRUE)
+                            
+wave3_data <- read_delim(here::here("data/wave3.csv"))
